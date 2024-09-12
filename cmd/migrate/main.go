@@ -12,7 +12,7 @@ import (
 func main() {
 	m, err := migrate.New(
 		"file://cmd/migrate/migrations",
-		"postgres://postgres:09desember2004Hen.@localhost:5432/restapitutorial?sslmode=disable",
+		"postgres://your-username:your-pass@localhost:5432/db-name?sslmode=disable",
 	)
 	if err != nil {
 		log.Fatal("error initialize migration")
